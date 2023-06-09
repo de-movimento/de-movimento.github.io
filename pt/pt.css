@@ -17,7 +17,7 @@ nav li a {
   background-color: #ffffff;
   border: 1px solid black;
   padding: 1rem 3rem;
-  color: gray;
+  color: black;
 }
 nav li a:hover {
   text-decoration: none;
