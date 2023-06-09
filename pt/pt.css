@@ -196,6 +196,9 @@ footer div a {
   article ul {
     padding: 0;
   }
+  .cprt-vert {
+    display:none;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 300px) {
   .frame {
