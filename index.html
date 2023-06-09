@@ -22,22 +22,6 @@
     <!-- JS -->
     <script>
       window.onload = (event) => {
-
-        function redirectBylang() {
-          const lang = navigator.languages;
-
-          let url = "";
-
-          lang.forEach((str) => {
-            console.log(str);
-            if (str == "pt-PT" || str == "pt" || str == "pt-BR") {
-              window.location.href = url + "pt/pt.html";
-            } else {
-              window.location.href = url + "en/en.html";
-            }
-          });
-        }
-
         const text = document.querySelectorAll(".text p");
 
         text.forEach((letter) => {
@@ -46,6 +30,16 @@
             .map((char, i) => '<span style="transform:rotate(' + i * 8.6 + 'deg)">' + char + "</span>")
             .join("");
         });
+
+        const lang = navigator.language;
+
+        function redirectBylang() {
+          if (lang == "pt-PT" || lang == "pt" || lang == "pt-BR") {
+            window.location.href = "pt/pt.html";
+          } else {
+            window.location.href = "en/en.html";
+          }
+        }
 
         let timeout;
 

@@ -32,7 +32,6 @@ p {
 }
 
 .logo {
-  position: absolute;
   width: 10rem;
   height: 10rem;
   background: url(images/fp.jpg);
