@@ -21,37 +21,40 @@
     </section>
     <!-- JS -->
     <script>
-      function redirectBylang() {
-        const lang = navigator.languages;
+      window.onload = (event) => {
 
-        let url = "";
+        function redirectBylang() {
+          const lang = navigator.languages;
 
-        lang.forEach((str) => {
-          console.log(str);
-          if (str == "pt-PT" || str == "pt" || str == "pt-BR") {
-            window.location.href = url + "pt/pt.html";
-          } else {
-            window.location.href = url + "en/en.html";
-          }
+          let url = "";
+
+          lang.forEach((str) => {
+            console.log(str);
+            if (str == "pt-PT" || str == "pt" || str == "pt-BR") {
+              window.location.href = url + "pt/pt.html";
+            } else {
+              window.location.href = url + "en/en.html";
+            }
+          });
+        }
+
+        const text = document.querySelectorAll(".text p");
+
+        text.forEach((letter) => {
+          letter.innerHTML = letter.innerHTML
+            .split("")
+            .map((char, i) => '<span style="transform:rotate(' + i * 8.6 + 'deg)">' + char + "</span>")
+            .join("");
         });
-      }
 
-      const text = document.querySelectorAll(".text p");
+        let timeout;
 
-      text.forEach((letter) => {
-        letter.innerHTML = letter.innerHTML
-          .split("")
-          .map((char, i) => '<span style="transform:rotate(' + i * 8.6 + 'deg)">' + char + "</span>")
-          .join("");
-      });
+        function langs() {
+          timeout = setTimeout(redirectBylang, 3500);
+        }
 
-      let timeout;
-
-      function langs() {
-        timeout = setTimeout(redirectBylang, 3500);
-      }
-
-      langs();
+        langs();
+      };
     </script>
   </body>
 </html>
