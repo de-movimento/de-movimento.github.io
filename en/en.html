@@ -114,7 +114,6 @@
     <!-- JS -->
     <script>
       window.onload = (event) => {
-
         const letters = document.querySelectorAll(".text p");
 
         letters.forEach((letter) => {
@@ -123,6 +122,10 @@
             .map((char, i) => '<span style="transform:rotate(' + i * 8.6 + 'deg)">' + char + "</span>")
             .join("");
         });
+
+        const cssRotation = document.querySelector("div.text");
+
+        cssRotation.style.display = "unset";
       };
     </script>
   </body>

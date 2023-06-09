@@ -106,7 +106,8 @@
         <span> &#169;descontentamento em movimento</span>
       </div>
       <p>
-        este sítio &#34;web&#34; não usa cookies (ou seja nenhuma informação do utilizador/leitor é usada como ferramenta de análise ou métricas de qualquer espécie). A sua finalidade em última instância será disseminar informação para melhor percepção e reflexão crítica dos instrumentos disponíveis a nível social
+        este sítio &#34;web&#34; não usa cookies (ou seja nenhuma informação do utilizador/leitor é usada como ferramenta de análise ou métricas de qualquer espécie). A sua finalidade em última instância será disseminar informação para melhor percepção e reflexão crítica dos
+        instrumentos disponíveis a nível social
       </p>
     </footer>
     <span class="cprt-vert"> &#169;descontentamento em movimento</span>
@@ -114,8 +115,7 @@
     <!-- JS -->
     <script>
       window.onload = (event) => {
-
-      const letters = document.querySelectorAll(".text p");
+        const letters = document.querySelectorAll(".text p");
 
         letters.forEach((letter) => {
           letter.innerHTML = letter.innerHTML
@@ -123,6 +123,10 @@
             .map((char, i) => '<span style="transform:rotate(' + i * 8.6 + 'deg)">' + char + "</span>")
             .join("");
         });
+
+        const cssRotation = document.querySelector("div.text");
+
+        cssRotation.style.display = "unset";
       };
     </script>
   </body>

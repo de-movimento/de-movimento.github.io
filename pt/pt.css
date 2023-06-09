@@ -1,6 +1,14 @@
 @import "../reset.css";
 @import "../index.css";
 
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   margin: auto auto;
+  width: 50%;
+}
+
 nav {
   margin: 3rem auto;
 }
@@ -197,7 +205,7 @@ footer div a {
     padding: 0;
   }
   .cprt-vert {
-    display:none;
+    display: none;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 300px) {
