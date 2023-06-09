@@ -113,14 +113,17 @@
     <span class="cprt-vert"> &#169;descontentamento em movimento</span>
     <!-- JS -->
     <script>
-      const letters = document.querySelectorAll(".text p");
+      window.onload = (event) => {
 
-      letters.forEach((letter) => {
-        letter.innerHTML = letter.innerHTML
-          .split("")
-          .map((char, i) => '<span style="transform:rotate(' + i * 8.6 + 'deg)">' + char + "</span>")
-          .join("");
-      });
+        const letters = document.querySelectorAll(".text p");
+
+        letters.forEach((letter) => {
+          letter.innerHTML = letter.innerHTML
+            .split("")
+            .map((char, i) => '<span style="transform:rotate(' + i * 8.6 + 'deg)">' + char + "</span>")
+            .join("");
+        });
+      };
     </script>
   </body>
 </html>
