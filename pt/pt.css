@@ -3,10 +3,18 @@
 
 section {
   display: flex;
-  justify-content: center;
   align-items: center;
-   margin: auto auto;
-  width: 50%;
+  justify-content: flex-end;
+  width: 80%;
+  position: unset;
+  transform: unset;
+  margin: 5rem auto 0;
+  gap: 3rem;
+}
+
+nav,
+aside {
+  width: 80%;
 }
 
 nav {
@@ -35,14 +43,6 @@ nav li a:hover {
   color: #ffffff;
 }
 
-section {
-  width: 80%;
-  position: unset;
-  transform: unset;
-  margin: 5rem auto 0;
-  gap: 3rem;
-  justify-content: flex-end;
-}
 section .frame {
   width: 30%;
 }
@@ -219,4 +219,10 @@ footer div a {
   footer {
     width: 50%;
   }
+  
+nav,
+aside {
+  width: 50%;
+}
+
 }
