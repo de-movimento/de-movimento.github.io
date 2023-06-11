@@ -1,15 +1,11 @@
 @import "../reset.css";
 @import "../index.css";
 
-body {
-  font-size: 1vw;
-}
-
 section {
   display: flex;
   align-items: center;
   /* justify-content: flex-end; */
-  width: 50%;
+  width: 80%;
   position: unset;
   transform: unset;
   margin: 5em auto;
@@ -21,7 +17,7 @@ section .frame {
 }
 nav,
 aside {
-  width: 50%;
+  width: 80%;
 }
 
 nav ul {
@@ -39,14 +35,6 @@ nav ul li {
   cursor: pointer;
 }
 
-nav li a {
-  text-decoration: none;
-  background-color: #ffffff;
-  border: 1px solid black;
-  padding: 1em 3em;
-  color: black;
-  font-size: 1.5em;
-}
 nav li a:hover {
   text-decoration: none;
   background-color: #000000;
@@ -85,14 +73,14 @@ section h1 {
   max-width: 75ch;
 }
 #img-rights + div > p {
-  max-width: 40ch;
+  max-width: 60ch;
 }
 
 article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 80%;
   margin: 1rem auto;
 }
 
@@ -103,24 +91,20 @@ article div {
 }
 
 article div div {
-  width: 60%;
+  width: 65%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 0;
+  align-items: center;
 }
 
 article img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  aspect-ratio: 1;
-  /* height: 40rem; */
 }
 
 #img-rights {
   position: relative;
-  width: 40%;
   height: 100em;
 }
 
@@ -144,12 +128,13 @@ article.text-content span {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.01em;
-  font-size: 1.3em;
+  font-size: 1em;
   width: 100%;
   overflow-wrap: break-word;
 }
 
 .text-content div:first-of-type {
+  width: 100%;
   gap: 3em;
 }
 
@@ -166,16 +151,11 @@ article ul {
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.01em;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 article ul li {
   margin-bottom: 2em;
   max-width: 70ch;
-}
-footer {
-  width: 80%;
-  margin: 10em auto 2em;
-  font-family: "Karla", sans-serif;
 }
 
 .cprt-vert {
@@ -185,6 +165,18 @@ footer {
   text-orientation: upright;
   writing-mode: vertical-lr;
   font-size: 0.7em;
+}
+
+.cprt-vert:hover {
+  cursor: pointer;
+  color: #12a57b;
+}
+
+footer {
+  font-size: 1vw;
+  width: 80%;
+  margin: 10em auto 2em;
+  font-family: "Karla", sans-serif;
 }
 footer p {
   font-family: "Karla", sans-serif;
@@ -200,39 +192,32 @@ footer div a {
   font-family: "Karla", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 0.9em;
+  font-size: 1.5em;
   text-decoration: none;
   text-align: right;
-  font-size: 1.2em;
+}
+footer div span {
+  font-size: 1.5em;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1024px) {
-  section {
-    flex-direction: column;
-  }
-  section h1 {
-    text-align: left;
-  }
+/* share ebuttons */
+#share-buttons {
+  position: fixed;
+  display: flex;
+  top:50%;
+  transform: translateY(-50%);
+  flex-direction: column;
+}
 
-  article img {
-    display: none;
-  }
-  #img-rights + div > p {
-    max-width: 75ch;
-  }
-  #img-rights {
-    display: none;
-  }
-  article div {
-    display: unset;
-    margin: auto;
-  }
-  article ul {
-    padding: 0;
-  }
-  article div div {
-    width: 100%;
-  }
+#share-buttons i {
+  font-size: 4em;
+  margin: 0.3em 1em;
+  transition: all 0.3s ease-out;
+}
+
+#share-buttons i:hover {
+  transform: scale(2);
+  margin: 0.3em 1em;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 640px) {
@@ -253,16 +238,122 @@ footer div a {
     display: none;
   }
 }
-/* 
-@media only screen and (min-width: 2000px) {
-  section,
-  article,
-  footer {
-    width: 50%;
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 1vw;
+  }
+  .text-content div:first-of-type {
+    width: 72%;
   }
 
-  nav,
-  aside {
-    width: 50%;
+  article ul li {
+    font-size: 1.3em;
   }
-} */
+
+  article.text-content p,
+  article.text-content span {
+    font-size: 1.3em;
+  }
+
+  nav li a {
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid black;
+    padding: 1em 3em;
+    color: black;
+    font-size: 1.5em;
+  }
+  #img-rights {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  section,
+  article {
+    width: 80%;
+  }
+
+  section {
+    flex-direction: column;
+  }
+  section h1 {
+    text-align: left;
+  }
+  nav li a {
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid black;
+    padding: 1rem 3rem;
+    color: black;
+    font-size: 0.9rem;
+  }
+  article img {
+    display: none;
+  }
+
+  #img-rights + div > p {
+    max-width: 75ch;
+  }
+  #img-rights {
+    display: none;
+  }
+  article div {
+    display: unset;
+    margin: auto;
+  }
+
+  article ul {
+    padding: 0;
+  }
+  article div div {
+    width: 100%;
+  }
+
+  #share-buttons i {
+    font-size: 1.5rem;
+    margin: 1rem 0.5rem;
+    transition: all 0.3s ease-out;
+  }
+
+  #share-buttons i:hover {
+    transform: scale(2);
+    margin: 1.2rem 0.5rem;
+  }
+}
+
+.facebook {
+  color: #3b5998;
+}
+.twitter {
+  color: #55acee;
+}
+.linkedin {
+  color: #0077b5;
+}
+.reddit {
+  color: #cb2027;
+}
+.whatsapp {
+  color: #25d366;
+}
+.telegram {
+  color: #229ed9;
+}
+.facebook,
+.twitter,
+.linkedin,
+.reddit,
+.whatsapp,
+.telegram {
+  opacity: 0.6;
+}
+.facebook:hover,
+.twitter:hover,
+.linkedin:hover,
+.reddit:hover,
+.whatsapp:hover,
+.telegram:hover {
+  opacity: 0.9;
+}
