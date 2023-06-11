@@ -178,6 +178,7 @@ footer {
   margin: 10em auto 2em;
   font-family: "Karla", sans-serif;
 }
+
 footer p {
   font-family: "Karla", sans-serif;
   font-style: normal;
@@ -310,7 +311,10 @@ footer div span {
   article div div {
     width: 100%;
   }
-
+  footer p {
+    font-size: 0.6rem;
+  
+  }
   #share-buttons i {
     font-size: 1.5rem;
     margin: 1rem 0.5rem;
