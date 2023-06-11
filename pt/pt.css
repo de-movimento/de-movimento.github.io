@@ -9,7 +9,7 @@ section {
   position: unset;
   transform: unset;
   margin: 5em auto;
-  gap: 3em;
+  gap: 4em;
 }
 
 section .frame {
@@ -204,13 +204,13 @@ footer div span {
 #share-buttons {
   position: fixed;
   display: flex;
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
   flex-direction: column;
 }
 
 #share-buttons i {
-  font-size: 4em;
+  font-size: 3em;
   margin: 0.3em 1em;
   transition: all 0.3s ease-out;
 }
