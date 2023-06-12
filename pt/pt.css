@@ -172,7 +172,6 @@ article ul li {
 }
 
 footer {
-  font-size: 1vw;
   width: 80%;
   margin: 10em auto 2em;
   font-family: "Karla", sans-serif;
@@ -293,6 +292,10 @@ footer div span {
     display: none;
   }
 
+  footer div a ,
+  footer div span {
+    font-size: 1rem;
+  }
   #img-rights + div > p {
     max-width: 75ch;
   }
