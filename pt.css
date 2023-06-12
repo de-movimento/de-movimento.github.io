@@ -1,0 +1,364 @@
+@import "../reset.css";
+@import "../index.css";
+
+section {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-end; */
+  width: 80%;
+  position: unset;
+  transform: unset;
+  margin: 5em auto;
+  gap: 4em;
+}
+
+section .frame {
+  width: 30%;
+}
+nav,
+aside {
+  width: 80%;
+}
+
+nav ul {
+  padding-left: 0;
+}
+
+nav {
+  margin: 3em auto;
+}
+
+nav ul li {
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  list-style: none;
+  cursor: pointer;
+}
+
+nav li a:hover {
+  text-decoration: none;
+  background-color: #000000;
+  /* border: 1px solid rgb(255, 255, 255); */
+  padding: 1em 3em;
+  color: #ffffff;
+}
+
+section h1 {
+  text-align: right;
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 5em;
+  z-index: 10;
+}
+
+.title-avg {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-avg aside {
+  font-size: 1.2em;
+  font-family: "Karla", sans-serif;
+  font-weight: 200;
+  letter-spacing: -0.03em;
+  width: 100%;
+  text-align: right;
+  margin-top: 5em;
+}
+
+.text-content p {
+  margin-bottom: 1em;
+  max-width: 75ch;
+}
+#img-rights + div > p {
+  max-width: 60ch;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+article div {
+  display: flex;
+  /* gap: 3rem; */
+  align-items: center;
+}
+
+article div div {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#img-rights {
+  position: relative;
+  height: 100em;
+}
+
+#rigths {
+  position: absolute;
+  font-family: "Karla", sans-serif;
+  bottom: 0;
+  left: 0.31rem;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  max-width: 75ch;
+}
+
+article.text-content p,
+article.text-content span {
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  font-size: 1em;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+.text-content div:first-of-type {
+  width: 100%;
+  gap: 3em;
+}
+
+article a {
+  color: gray;
+  display: inline;
+  text-decoration: none;
+}
+
+article ul {
+  list-style-position: inside;
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  font-size: 1em;
+}
+article ul li {
+  margin-bottom: 2em;
+  max-width: 70ch;
+}
+
+.cprt-vert {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  font-size: 0.7em;
+}
+
+.cprt-vert:hover {
+  cursor: pointer;
+  color: #12a57b;
+}
+
+footer {
+  width: 80%;
+  margin: 10em auto 2em;
+  font-family: "Karla", sans-serif;
+}
+
+footer p {
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1.7;
+  letter-spacing: 0.1em;
+}
+
+footer div a {
+  color: gray;
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-decoration: none;
+  text-align: right;
+}
+footer div span {
+  font-size: 1.5em;
+}
+
+/* share ebuttons */
+#share-buttons {
+  position: fixed;
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-direction: column;
+}
+
+#share-buttons i {
+  font-size: 2em;
+  margin: 0.3em 1em;
+  transition: all 0.3s ease-out;
+}
+
+#share-buttons i:hover {
+  transform: scale(2);
+  margin: 0.3em 1em;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  section h1 {
+    width: 100%;
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.1em;
+    font-size: 5em;
+    z-index: 10;
+  }
+  section .frame {
+    width: 100%;
+  }
+
+  .cprt-vert {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 1vw;
+  }
+  .text-content div:first-of-type {
+    width: 72%;
+  }
+
+  article ul li {
+    font-size: 1.3em;
+  }
+
+  article.text-content p,
+  article.text-content span {
+    font-size: 1.3em;
+  }
+
+  nav li a {
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid black;
+    padding: 1em 3em;
+    color: black;
+    font-size: 1.5em;
+  }
+  #img-rights {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  section,
+  article {
+    width: 80%;
+  }
+
+  section {
+    flex-direction: column;
+  }
+  section h1 {
+    text-align: left;
+  }
+  nav li a {
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid black;
+    padding: 1rem 3rem;
+    color: black;
+    font-size: 0.9rem;
+  }
+  article img {
+    display: none;
+  }
+
+  footer div a ,
+  footer div span {
+    font-size: 1rem;
+  }
+  #img-rights + div > p {
+    max-width: 75ch;
+  }
+  #img-rights {
+    display: none;
+  }
+  article div {
+    display: unset;
+    margin: auto;
+  }
+
+  article ul {
+    padding: 0;
+  }
+  article div div {
+    width: 100%;
+  }
+  footer p {
+    font-size: 0.6rem;
+  }
+  #share-buttons i {
+    font-size: 1.5rem;
+    margin: 1rem 0.5rem;
+    transition: all 0.3s ease-out;
+  }
+
+  #share-buttons i:hover {
+    transform: scale(2);
+    margin: 1.2rem 0.5rem;
+  }
+}
+
+.facebook {
+  color: #3b5998;
+}
+.twitter {
+  color: #55acee;
+}
+.linkedin {
+  color: #0077b5;
+}
+.reddit {
+  color: #cb2027;
+}
+.whatsapp {
+  color: #25d366;
+}
+.telegram {
+  color: #229ed9;
+}
+.facebook,
+.twitter,
+.linkedin,
+.reddit,
+.whatsapp,
+.telegram {
+  opacity: 0.6;
+}
+.facebook:hover,
+.twitter:hover,
+.linkedin:hover,
+.reddit:hover,
+.whatsapp:hover,
+.telegram:hover {
+  opacity: 0.9;
+}
