@@ -209,14 +209,14 @@ footer div span {
 }
 
 #share-buttons i {
-  font-size: 2em;
-  margin: 0.3em 1em;
+  font-size: 1.7em;
+  margin: 0.7rem 1.5rem;
   transition: all 0.3s ease-out;
 }
 
 #share-buttons i:hover {
-  transform: scale(2);
-  margin: 0.3em 1em;
+  transform: scale(1.5);
+  margin: 0.7rem 1.5rem;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 640px) {
@@ -292,7 +292,7 @@ footer div span {
     display: none;
   }
 
-  footer div a ,
+  footer div a,
   footer div span {
     font-size: 1rem;
   }
@@ -318,13 +318,13 @@ footer div span {
   }
   #share-buttons i {
     font-size: 1.5rem;
-    margin: 1rem 0.5rem;
+    margin: 0.5rem 0.8rem;
     transition: all 0.3s ease-out;
   }
 
   #share-buttons i:hover {
-    transform: scale(2);
-    margin: 1.2rem 0.5rem;
+    transform: scale(1.5);
+    margin: 1rem 0.8rem;
   }
 }
 
