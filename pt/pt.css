@@ -232,10 +232,6 @@ footer div span {
   section .frame {
     width: 100%;
   }
-
-  .cprt-vert {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -269,6 +265,9 @@ footer div span {
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
+  .cprt-vert {
+    display: none;
+  }
   section,
   article {
     width: 80%;
