@@ -236,33 +236,8 @@ footer div a {
   section .frame {
     width: 100%;
   }
-}
-
-@media only screen and (min-width: 1024px) {
-  body {
-    font-size: 1vw;
-  }
-  /* .text-content div:first-of-type {
-    width: 80%;
-  } */
-
-  article ul li {
-    font-size: 1.1em;
-  }
-
-  article.text-content p,
-  article.text-content span {
-    font-size: 1.1em;
-  }
-
-  nav li a {
-    text-decoration: none;
-    background-color: #ffffff;
-    border: 1px solid black;
-    border-radius: 1rem;
-    padding: 0.5rem 1.7rem;
-    color: black;
-    font-size: 0.8rem;
+  #share-buttons {
+    display: none;
   }
 }
 
@@ -368,8 +343,44 @@ footer div a {
   opacity: 0.9;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 640px) {
-  #share-buttons {
-    display: none;
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 1vw;
+  }
+  /* .text-content div:first-of-type {
+    width: 80%;
+  } */
+
+  article ul li {
+    font-size: 1rem;
+  }
+
+  article.text-content p,
+  article.text-content span {
+    font-size: 1rem;
+  }
+
+  nav li a {
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 0.5rem 1.7rem;
+    color: black;
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  body {
+    font-size: 1vw;
+  }
+  article ul li {
+    font-size: 1.1em;
+  }
+
+  article.text-content p,
+  article.text-content span {
+    font-size: 1.1em;
   }
 }
