@@ -39,7 +39,8 @@ nav li a:hover {
   text-decoration: none;
   background-color: #000000;
   /* border: 1px solid rgb(255, 255, 255); */
-  padding: 1em 3em;
+  border-radius: 1rem;
+  padding: 0.5rem 1.7rem;
   color: #ffffff;
 }
 
@@ -60,7 +61,7 @@ section h1 {
 .title-avg aside {
   font-size: 1.2em;
   font-family: "Karla", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: -0.03em;
   width: 100%;
   text-align: right;
@@ -69,11 +70,11 @@ section h1 {
 
 .text-content p {
   margin-bottom: 1em;
-  max-width: 75ch;
-}
-#img-rights + div > p {
   max-width: 60ch;
 }
+/* #img-rights + div > p {
+  max-width: 60ch;
+} */
 
 article {
   display: flex;
@@ -99,12 +100,14 @@ article div div {
 article img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 #img-rights {
+  margin: 2rem 0;
+  width: 50%;
   position: relative;
-  height: 100em;
+  /* height: 100em; */
 }
 
 #rigths {
@@ -117,14 +120,14 @@ article img {
   color: white;
   font-size: 0.9em;
   margin-bottom: 1em;
-  max-width: 75ch;
+  max-width: 60ch;
 }
 
 article.text-content p,
 article.text-content span {
   font-family: "Karla", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.5;
   letter-spacing: 0.01em;
   font-size: 1em;
@@ -134,7 +137,7 @@ article.text-content span {
 
 .text-content div:first-of-type {
   width: 100%;
-  gap: 3em;
+  /* gap: 3em; */
 }
 
 article a {
@@ -144,17 +147,19 @@ article a {
 }
 
 article ul {
-  list-style-position: inside;
+  list-style-position: outside;
   font-family: "Karla", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  line-height: 1.7;
+  font-weight: 600;
+  line-height: 1.5;
   letter-spacing: 0.01em;
   font-size: 1em;
+  padding: 0;
+  margin: 0 auto;
 }
 article ul li {
-  margin-bottom: 2em;
-  max-width: 70ch;
+  margin-bottom: 1em;
+  max-width: 60ch;
 }
 
 .cprt-vert {
@@ -170,7 +175,9 @@ article ul li {
   cursor: pointer;
   color: #12a57b;
 }
-
+.cprt-vert {
+  display: none;
+}
 footer {
   width: 80%;
   margin: 10em auto 2em;
@@ -195,9 +202,6 @@ footer div a {
   text-decoration: none;
   text-align: right;
 }
-footer div span {
-  font-size: 1.5em;
-}
 
 /* share ebuttons */
 #share-buttons {
@@ -209,7 +213,7 @@ footer div span {
 }
 
 #share-buttons i {
-  font-size: 1.7em;
+  font-size: 1.7rem;
   margin: 0.7rem 1.5rem;
   transition: all 0.3s ease-out;
 }
@@ -238,36 +242,31 @@ footer div span {
   body {
     font-size: 1vw;
   }
-  .text-content div:first-of-type {
-    width: 72%;
-  }
+  /* .text-content div:first-of-type {
+    width: 80%;
+  } */
 
   article ul li {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 
   article.text-content p,
   article.text-content span {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 
   nav li a {
     text-decoration: none;
     background-color: #ffffff;
     border: 1px solid black;
-    padding: 1em 3em;
+    border-radius: 1rem;
+    padding: 0.5rem 1.7rem;
     color: black;
-    font-size: 1.5em;
-  }
-  #img-rights {
-    width: 35%;
+    font-size: 0.8rem;
   }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
-  .cprt-vert {
-    display: none;
-  }
   section,
   article {
     width: 80%;
@@ -283,9 +282,10 @@ footer div span {
     text-decoration: none;
     background-color: #ffffff;
     border: 1px solid black;
-    padding: 1rem 3rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1.7rem;
     color: black;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   article img {
     display: none;
@@ -295,9 +295,9 @@ footer div span {
   footer div span {
     font-size: 1rem;
   }
-  #img-rights + div > p {
-    max-width: 75ch;
-  }
+  /* #img-rights + div > p {
+    max-width: 60ch;
+  } */
   #img-rights {
     display: none;
   }
@@ -328,22 +328,28 @@ footer div span {
 }
 
 .facebook {
-  color: #3b5998;
+  color: #000000;
+  /* color: #3b5998; */
 }
 .twitter {
-  color: #55acee;
+  color: #000000;
+  /* color: #55acee; */
 }
 .linkedin {
-  color: #0077b5;
+  color: #000000;
+  /* color: #0077b5; */
 }
 .reddit {
-  color: #cb2027;
+  color: #000000;
+  /* color: #cb2027; */
 }
 .whatsapp {
-  color: #25d366;
+  color: #000000;
+  /* color: #25d366; */
 }
 .telegram {
-  color: #229ed9;
+  color: #000000;
+  /* color: #229ed9; */
 }
 .facebook,
 .twitter,
@@ -360,4 +366,10 @@ footer div span {
 .whatsapp:hover,
 .telegram:hover {
   opacity: 0.9;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  #share-buttons {
+    display: none;
+  }
 }
