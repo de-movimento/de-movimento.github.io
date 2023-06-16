@@ -59,7 +59,7 @@ section h1 {
 }
 
 .title-avg aside {
-  font-size: 1.2em;
+  font-size: 2.2em;
   font-family: "Karla", sans-serif;
   font-weight: 400;
   letter-spacing: -0.03em;
@@ -230,8 +230,13 @@ footer div a {
     font-style: normal;
     font-weight: 600;
     letter-spacing: -0.1em;
-    font-size: 5em;
+    font-size: 2.5rem;
     z-index: 10;
+  }
+
+  .title-avg aside {
+    font-size: 0.8rem;
+    margin-top: 0;
   }
   section .frame {
     width: 100%;
@@ -251,7 +256,7 @@ footer div a {
     flex-direction: column;
   }
   section h1 {
-    text-align: left;
+    text-align: center;
   }
   nav li a {
     text-decoration: none;
@@ -391,5 +396,9 @@ footer div a {
   article.text-content p,
   article.text-content span {
     font-size: 1.1em;
+  }
+  .title-avg aside {
+    font-size: 1.5em;
+    margin-top: 3rem;
   }
 }
