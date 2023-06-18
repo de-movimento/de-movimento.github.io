@@ -80,7 +80,7 @@ img {
   mask: var(--m);
   filter: grayscale();
   transition: 0.3s linear;
-  cursor: pointer;
+  cursor: default;
 }
 img:hover {
   --_i: 10%;
