@@ -314,7 +314,6 @@ footer div a {
     display: none;
   }
   footer div {
-    width: 40%;
     text-align: end;
   }
 
@@ -491,7 +490,7 @@ footer div a {
   }
   footer {
     gap: 5rem;
-    width: 80%;
+    width: 95%;
     align-items: flex-end;
     flex-direction: column;
     gap: 0;
