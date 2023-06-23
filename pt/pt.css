@@ -490,7 +490,7 @@ footer div a {
   }
   footer {
     gap: 5rem;
-    width: 95%;
+    width: 80%;
     align-items: flex-end;
     flex-direction: column;
     gap: 0;
